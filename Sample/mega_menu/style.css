@@ -1,0 +1,36 @@
+.global_menu {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.global_menu li {
+  display: inline-block;
+}
+
+.global_menu a {
+  display: block;
+  padding: 10px 30px;
+}
+
+.child_menu>li>a {
+  font-size: 0.8em;
+}
+
+.child_menu {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 30px;
+  color: #333;
+  visibility: hidden;
+}
+
+.menu:hover .child_menu {
+  visibility: visible;
+}
+
+.child_menu a:hover {
+  color: #fff;
+}
