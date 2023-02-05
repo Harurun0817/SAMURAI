@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リテールOne-Stop</title> 
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="sanitize.css"> -->
+    <link rel="stylesheet" href="style.css"> 
+    
+
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-primary text-white">
+        <h1 class="title">Retail One-Stop</h1>
+
+        <div class="">
+            <button class="btn btn-info" type="button" onclick="smaller()">小さく</button>
+            <button class="btn btn-success" type="button" onclick="larger()">大きく</button>
+          </div>
+          
+        <!-- <ul id="navigation">
+            <li>各種申請 >>></li>
+            <li><a class="underline" href="#">準備状況報告</a></li>
+            <li><a class="underline" href="#">明るいニュース</a></li>
+            <li><a class="underline" href="#">募集商品予算調整</a></li>
+            <li><a class="underline" href="#">実績修正</a></li>
+            
+        </ul>               -->
+      
+        <!-- <div id="container">
+
+        </div>container end -->
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-end">
+          <div class="navbar-brand" href="#">各種申請 >>></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">準備状況報告</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">明るいニュース</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">募集商品予算調整</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">実績修正</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 g-4 bg-white">
+                <div class="aside">
+                    <h3 class="aside">評価制度・予算・実績</h3>
+                    <ul class="aseide-1">
+                        <li class="underline-2"><a href="#">リテール評価制度</a></li>
+                        <li class="underline-2"><a href="#">リテール営業予算表</a></li>
+                        <li class="underline-2"><a href="#">明るいニュース集計</a></li>
+                        <li class="underline-2"><a href="#">ファンド・ツミタテ実績</a></li>
+                        <li class="underline-2"><a href="#">保険</a></li>
+                    </ul>              
+                </div> <!--aside end-->
+        
+                <div class="aside">
+                    <h3 class="aside">リンク一覧</h3>
+                    <ul class="aseide-2">
+                        <li class="underline-2"><a href="#">ベルフェイス（ログイン）</a></li>
+                        <li class="underline-2"><a href="#">マネービジョン</a></li>
+                        <li class="underline-2"><a href="#">Quick投資情報</a></li>
+                        <li class="underline-2"><a href="#">帝国データバンク</a></li>
+                        <li class="underline-2"><a href="#">カオナビ</a></li>
+                        <li class="underline-2"><a href="#">eラーニング</a></li>
+                        <li class="underline-2"><a href="#">Unipos</a></li>
+                    </ul>              
+                </div> <!--aside end-->
+        
+            </div>
+
+            <div class="col-9 g-4 main">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-5 bg-white">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <a href="index_market.html" class="stretched-link">マーケットレポート<br>エクイティ</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                            <a href="index_toushin_saiken.html" class="stretched-link">投資信託<br>債券/その他</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <a href="index_solution.html" class="stretched-link">ソリューション</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <a href="#" class="stretched-link">リテールカレンダー<br>（募集商品情報）</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <a href="index_shikaku.html" class="stretched-link">勉強会カレンダー<br>資格/研修</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <a href="index_gyouren.html" class="stretched-link">業務連絡/通達<br>BCP</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <a href="index_cs_wakate.html" class="stretched-link">部店内CS<br>若手営業員</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <a href="index_seisansei.html" class="stretched-link">ベルフェイス<br>活用ツール</a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+<!-- ここから追加 -->
+    <!--   ポップアップ -->
+
+    <!-- クリックしたらモーダルを表示するボタン -->
+    <a href="#" class="btn">勉強会情報を再表示</a>
+
+    <!-- オーバーレイ -->
+    <div class="overlay"></div>
+
+    <!-- モーダルウィンドウ -->
+    <div class="my_modal">
+        <div class="d-flex justify-content-between align-items-center bg-primary text-white p-3">
+            <h2 class="m-0">本日1/23開催　投信勉強会</h2>
+            <div class="close">&times</div>
+        </div>
+            <div class="my_modal_body">
+            <p><a href="https://codepen.io/orange-notebook/pen/wvojxWe" target="_blank">
+                10:00~11:00<br>&nbsp;
+                (必須) 投資情報部 インド株式投信勉強会 （Teams）
+            </p></a>
+            <p><a href="https://codepen.io/orange-notebook/pen/wvojxWe" target="_blank">
+                15:30~16:30<br>&nbsp;
+                (任意) ゴールドマンサックス主催 （Webex）
+            </p></a>
+            </div>      
+    </div>
+
+
+<!-- 追加おわり -->
+
+
+
+    <footer>
+    Copyright © tokaitokyo.sec All Rights Reserved.
+    </footer>
+    
+    <script src="js/top.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
