@@ -1,5 +1,15 @@
 html {
   font-size: 16px;
+  height: 100%; /* フッターが上に上がってきちゃう対策用 */
+}
+body {
+  height: 100%; /* フッターが上に上がってきちゃう対策用 */
+}
+footer {
+  position: sticky; /* フッターが上に上がってきちゃう対策用 */
+  top: 100vh; /* フッターが上に上がってきちゃう対策用 */
+  width: 100%; /* フッターが上に上がってきちゃう対策用 */
+  z-index: -1; /* フッターが上に上がってきちゃう対策用 */
 }
 
 body{
@@ -28,7 +38,7 @@ a {
   align-items: center;
 }
 
-.nav-item:not(:last-child):after {
+.nav-item:not(:last-child):not(:first-child):after {
   content:"|" ;
   font-size: 1rem;
 }
@@ -155,7 +165,75 @@ header .bg-primary {
 }
 
 h3.aside {
+  font-size: 1.2rem;
   background: linear-gradient(transparent 85%, #141f53 50%);
 }
 
+.border-6 {
+  border-width: 1rem !important;
+}
+
+.font-size-change button {
+  font-size: 16px;
+}
+
+header.title {
+  color: white;
+  font-size: 2.5rem;
+  background-color: #fdac31;
+  background-image: linear-gradient(180deg, #f5c541 0%, #fb9912 50%, #fdde88 100%);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.bg-light {
+  background-color:rgb(231, 231, 231) !important;
+}
+.border-light {
+  border-color: rgb(231, 231, 231) !important;
+}
+.border-end-weight {
+  border-right-width: 2.5rem !important;
+}
+.border-start-weight {
+  border-left-width: 2.5rem !important;
+}
+.child_menu>li>a {
+  font-size: 1rem;
+}
+
+.child_menu {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  padding: 0.5rem;
+  color: #333;
+  background-color:rgb(255, 255, 255);
+  border: solid #00000020;
+  border-width: 0 1px 1px 1px;
+  visibility: hidden;
+}
+.menu {
+  position: relative;
+}
+.menu:hover .child_menu {
+  visibility: visible;
+}
+
+.child_menu a:hover {
+  color: #fff;
+}
+
+.card-top .card {
+  box-shadow: 3px 3px 5px 2px rgb(226 194 135 / 71%);
+}
+
+img.img-fit-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
 /* 追加おわり */
