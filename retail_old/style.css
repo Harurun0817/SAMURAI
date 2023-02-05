@@ -1,0 +1,518 @@
+@charset "UTF-8";
+
+/*全体の設定
+==================================================*/
+
+/* body{
+    font-family: sans-serif;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-size: 16px;
+    color:rgb(7, 7, 34);
+    background-color: rgb(244, 247, 255);
+
+/* body内　2カラムの配置設定
+===========================================*/
+/*
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 200px 1fr 100px ;
+    grid-template-columns: 350px 1fr ;
+    grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+}
+
+header{
+    grid-area: header;
+    height: 180px;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    grid-area: main;
+    border-top: red;
+    margin: 20px 50px 0 30px ;
+}
+
+aside{
+    background-color: rgb(255, 255, 255);
+    grid-area: aside;
+    margin: 20px 30px 0 50px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(44, 44, 44);
+    grid-area: footer;
+} */
+
+html {
+  font-size: 16px;
+}
+
+body{
+    font-family: sans-serif;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    color:rgb(7, 7, 34);
+    background-color: rgb(244, 247, 255);
+
+/* body内　2カラムの配置設定
+===========================================*/
+    display: -ms-grid;
+    display: grid;
+    min-height: 100vh;
+    -ms-grid-rows: 200px 1fr 100px ;
+    grid-template-rows: 200px 1fr 100px ;
+    -ms-grid-columns: 350px 1fr ;
+    grid-template-columns: 350px 1fr ;
+        grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+}
+
+
+header{
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: header;
+    height: 180px;
+}
+
+main{
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    background-color: rgb(255, 255, 255);
+    grid-area: main;
+    border-top: red;
+    margin: 20px 50px 0 30px ;
+}
+
+aside{
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    background-color: rgb(255, 255, 255);
+    grid-area: aside;
+    margin: 20px 30px 0 50px;
+    font-weight: bold;
+}
+
+footer{
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    background-color: rgb(44, 44, 44);
+    grid-area: footer;
+}
+
+.bg-primary {
+  background-color: rgb(19, 17, 131) !important;
+}
+/*全体の設定
+==================================================*/
+
+#container{
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/*全体：リンクの設定
+==================================================*/
+
+a {
+    color:rgb(19, 17, 131);    
+    text-decoration: none;
+}
+
+
+a:link{
+  color: rgb(19, 17, 131);
+  text-decoration: none;
+}
+a:visited{
+  color: rgb(19, 17, 131);
+  text-decoration: none;
+}
+
+
+
+a:hover{
+    text-decoration: none;
+}
+
+
+/*ヘッダー
+==================================================*/
+header{
+    font-weight: bold;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+}
+
+.title{
+    color: white;
+    font-size: 2.5rem;
+    background-color: #fdac31;
+    background-image: linear-gradient(180deg, #f5c541 0%, #fb9912 50%, #fdde88 100%);
+/*    background-color: rgb(250, 127, 56);*/
+    padding: 10px;
+    margin-top: 5px;/*タイトルの上に表示させたい場合ここを拡張*/
+    width: 100%;
+    text-align: center;
+}
+
+ul#navigation {
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+    width: 70%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+
+ul#navigation li{
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #5d5d5d;
+    list-style: none;
+
+}
+
+/*アンダーラインの設定　参考：https://diwao.com/2017/06/css-hover-underline-animation.html
+===========================================*/
+
+/* .underline {
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  
+  .underline::after {
+    background-color:rgb(15, 13, 112);
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: .3s all;
+    width: 0;
+  }
+  
+  .underline:hover::after {
+    width: 100%;
+  } */
+
+
+  .underline {
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  
+  .underline::after {
+    background-color:rgb(15, 13, 112);
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+    width: 0;
+  }
+  
+  .underline:hover::after {
+    width: 100%;
+  }
+
+/*main
+================================================*/
+.flex-container {
+    margin: 30px ;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: flex-start;
+}
+
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #333333; */
+    background-color: #ffffff;
+    font-size: 1.375rem;
+    border: 0.1px solid rgb(214, 214, 214); 
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.2em;
+    box-shadow: 3px 3px 5px 2px rgba(69, 69, 69, 0.5);
+    width: 230px;
+    height: 130px;
+    border-radius: 3px;
+    position: relative;
+    margin: 50px 20px 0 40px;
+  }
+  
+.menu1 {
+    box-shadow: 3px 3px 5px 2px rgba(226, 194, 135, 0.712);
+}  
+
+
+.menu2 {
+    box-shadow: 3px 3px 5px 2px rgba(175, 188, 226, 0.993);
+}  
+
+.menu3 {
+    box-shadow: 3px 3px 5px 2px rgba(199, 152, 162, 0.836);
+}  
+
+
+.flex-item::before, .flex-item::after {
+    content: "";
+    position: absolute;
+  }
+  
+  .flex-item::before {
+    content: "";
+    display: block;
+  }
+  
+  .flex-item::after {
+    content: "";
+    display: block;
+  }
+
+
+/* ここから追加 */
+/* =========================================ポップアップ =====----
+  参考： https://codepen.io/orange-notebook/pen/wvojxWe=*/
+
+
+/* ボタンのデザイン   */
+.btn {
+  display: inline-block;
+  position: fixed;
+  /* text-decoration: none; */
+  bottom: 50px;
+  right: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 1px solid rgb(15, 13, 112);
+  background-color: #fff;
+  /* background: linear-gradient(180deg, #f5c541 0%, #fb9912 50%, #fdde88 100%); */
+  border-radius: 5px;
+  color: rgb(15, 13, 112);
+  margin: 30px;
+  transition: 0.2s;
+
+}
+
+.btn:hover {
+  color: #fff ;
+  background-color: rgb(15, 13, 112);
+}
+
+/*------------------ オーバーレイ -------------------*/
+.overlay {
+  /* 位置を固定 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* 画面にいっぱいに広がるように設定 */
+  width: 100%;
+  height: 100vh;
+  /* rgbaを使って60%の黒いオーバーレイにする */
+  background: rgba(0,0,0,0.6);
+
+  /* デフォルトでは見えないようにする */
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+/* activeクラスのついたときにオーバーレイを表示する */
+.overlay .active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* モーダルウインドウ */
+.my_modal {
+  max-width: 500px;
+  width: 86%;
+  padding: 0;
+  background: rgb(253, 252, 252);
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  transform: translate(-10%, -20%);
+  /* デフォルトでは非表示 */
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.my_modal h2 {
+  /* background-color:  rgb(15, 13, 112); */
+  /* color: #FFF; */
+  /* padding: 10px; */
+}
+
+.my_modal_body {
+  padding: 10px;
+}
+
+/* activeクラスのついたときのモーダルウインドウ */
+.my_modal.active {
+  opacity: 1;
+  visibility: visible;
+  animation: anim 1s forwards;
+
+}
+
+@keyframes anim {
+  0% {
+  transform: translateY(-300px);
+  }
+
+  100% {
+  transform: translateY(-50px);
+  }
+}
+
+.my_modal .close {
+  font-size: 1.875rem;
+}
+
+.my_modal h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.my_modal p {
+  font-size: 1rem;
+}
+
+.my_modal>.close, .my_modal>p {
+  cursor: pointer;
+}
+
+/* 追加おわり */
+
+
+header .s-btn{
+  display: flex;
+  /* align-items: center; */
+  position: fixed;
+  right: 20px; 
+}
+
+
+
+.s-btn button {
+  font-size: 0.875rem;
+  padding: 5px 10px ;
+  font-weight: bold;
+  border: 1px solid rgb(15, 13, 112);
+  background-color: #fff;
+  /* background: linear-gradient(180deg, #f5c541 0%, #fb9912 50%, #fdde88 100%); */
+  border-radius: 5px;
+  color: rgb(15, 13, 112);
+  margin: 5px;
+  transition: 0.2s;
+}
+
+.s-btn button:hover {
+  color: #fff ;
+  background-color: rgb(15, 13, 112);
+}
+
+
+
+
+
+/*aside
+================================================*/
+
+.aside h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: rgb(15, 13, 112);
+    padding: 0 10px;
+    margin-bottom: 0;
+    border-bottom: 4px solid rgb(19, 17, 131);
+}
+
+.aside {
+    margin: 10px 5px 80px 5px;
+}
+
+aside li {
+    border-bottom: 1px dashed rgb(131, 131, 136);
+    padding: 3px;
+    margin: 5px 20px 5px -10px;
+
+}
+/*aside underline-2 の設定
+================================================*/
+
+.underline-2 {
+    position: relative;
+  }
+  
+  .underline-2::after {
+    border-bottom: 2.5px solid #fda520;
+/*
+    background-color:#fdac31;*/
+    bottom: -1px;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: .2s all;
+    width: 0;
+  }
+  
+  .underline-2:hover::after {
+    width: 100%;
+  }
+
+
+/*aside list-style
+================================================*/
+
+
+
+
+/*footer
+================================================*/
+footer {
+    width: 100%;
+    height: 100px;
+    padding-top: 45px;
+    margin: 70px 0 0 0;
+    text-align: center;
+    color: #fff;
+    background-color: #020202;
+}
+
+
+

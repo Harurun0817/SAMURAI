@@ -1,0 +1,1264 @@
+*index.html****************************************************
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リテールOne-Stop</title> 
+    <link rel="stylesheet" href="sanitize.css">
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<body>
+    <header>
+        <div id="container">
+            <h1 class="title">Retail One-Stop</h1>
+
+            <ul id="navigation">
+                <li>各種申請 >>></li>
+                <li><a class="underline" href="#">　準備状況報告　</a></li>
+                <li><a class="underline" href="#">　明るいニュース　</a></li>
+                <li><a class="underline" href="#">募集商品予算調整</a></li>
+                <li><a class="underline" href="#">　　実績修正　　</a></li>
+            </ul>              
+          
+        </div><!--container end-->
+    </header>
+
+  
+    <main>
+
+    <div class="flex-container">
+        <div class="flex-item menu1"><a href="index_market.html">マーケットレポート<br>エクイティ</a></div>
+        <div class="flex-item menu1"><a href="index_toushin_saiken.html">投資信託<br>債券/その他</a></div>
+        <div class="flex-item menu1"><a href="index_solution.html">ソリューション</a></div>
+        <div class="flex-item menu1"><a href="index_byouren.html">リテールカレンダー<br>（募集商品情報）</a></div>
+        <div class="flex-item menu2"><a href="index_shikaku.html">業務連絡/通達<br>BCP</a></div>
+        <div class="flex-item menu2"><a href="index_cs_wakate.html">資格/研修<br>勉強会</a></div>
+        <div class="flex-item menu3"><a href="index_seisansei.html">部店内CS<br>若手営業員</a></div>
+        <div class="flex-item menu3"><a href="index_seisansei.html">Web面談<br>他活用ツール</a></div>
+    </div><!--flex-container end-->              
+    
+    </main>
+    <aside>
+        <div class="aside">
+        <h3 class="aside">評価制度・予算・実績</h3>
+        <ul class="aseide-1">
+            <li><a href="#">リテール評価制度</a></li>
+            <li><a href="#">リテール営業予算表</a></li>
+            <li><a href="#">明るいニュース集計</a></li>
+            <li><a href="#">ファンド・ツミタテ実績</a></li>
+            <li><a href="#">保険</a></li>
+         </ul>              
+        </div> <!--aside end-->
+
+        <div class="aside">
+            <h3 class="aside">リンク一覧</h3>
+            <ul class="aseide-2">
+                <li><a href="#">ベルフェイス（ログイン）</a></li>
+                <li><a href="#">マネービジョン</a></li>
+                <li><a href="#">Quick投資情報</a></li>
+                <li><a href="#">帝国データバンク</a></li>
+                <li><a href="#">カオナビ</a></li>
+                <li><a href="#">eラーニング</a></li>
+                <li><a href="#">Unipos</a></li>
+ 
+            </ul>              
+            </div> <!--aside end-->
+    
+
+    </aside>
+
+    <footer>
+    Copyright © tokaitokyo.sec All Rights Reserved.
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+**index_market.html******************************************************************************
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マーケットレポート ❘ エクイティ</title> 
+    <link rel="stylesheet" href="sanitize.css">
+    <link rel="stylesheet" href="style_2.css"> 
+
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="menu">
+            <ul class="flex-nav">
+                <li class="nav menu1"><a href="index.html">>TOP</a></li>
+                <li class="nav menu1"><a href="index_toushin_saiken.html">>投資信託/債券/その他</a></li>
+                <li class="nav menu1"><a href="index_solution.html">>ソリューション</a></li>
+                <li class="nav menu1"><a href="index_byouren.html">>リテールカレンダー</a></li>
+                <li class="nav menu2"><a href="index_shikaku.html">>業務連絡/通達/BCP</a></li>
+                <li class="nav menu2"><a href="index_cs_wakate.html">>資格/研修/勉強会</a></li>
+                <li class="nav menu3"><a href="index_seisansei.html">>部店内CS/若手営業員</a></li>
+                <li class="nav menu3"><a href="index_seisansei.html">>Web面談/他活用ツール</a></li>
+            </ul>
+        </div>       
+                                    
+        <h1 class="title">Retail One-Stop　　~マーケットレポート ・ エクイティ~</h1>
+    </div><!--container end-->
+
+    </header>
+
+  
+    <main>
+
+    <h2 id="market-report">マーケットレポート</h2> 
+    
+        <div class="container market">
+            <div class="grid-item">
+                <p>タイトル</p>
+                <img src="main-visual.jpg" width="200px" height="150px" alt="img">
+                <p>説明文</p>
+            </div>
+
+            <div class="grid-item">
+                <p>タイトル</p>
+                <img src="main-visual.jpg" width="200px" height="150px" alt="img">
+                <p>説明文</p>
+            </div>
+
+            <div class="grid-item">
+                <p>タイトル</p>
+                <img src="main-visual.jpg" width="200px" height="150px" alt="img">
+                <p>説明文</p>
+            </div>
+
+            <div class="grid-item">
+                <p>タイトル</p>
+                <img src="main-visual.jpg" width="200px" height="150px" alt="img">
+                <p>説明文</p>
+            </div>
+
+            <div class="grid-item">
+                <p>タイトル</p>
+                <img src="main-visual.jpg" width="200px" height="150px" alt="img">
+                <p>説明文</p>
+            </div>
+
+            <div class="grid-item">
+                <p>タイトル</p>
+                <img src="main-visual.jpg" width="200px" height="150px" alt="img">
+                <p>説明文</p>
+            </div>
+
+            <div class="grid-item">
+                <p>タイトル</p>
+                <img src="main-visual.jpg" width="200px" height="150px" alt="img">
+                <p>説明文</p>
+            </div>
+
+            <div class="grid-item">
+                <p>タイトル</p>
+                <img src="main-visual.jpg" width="200px" height="150px" alt="img">
+                <p>説明文</p>
+            </div>
+
+
+            </div><!--container market end-->        
+        
+        <h2 id="equity">エクイティ</h2> 
+
+   
+    </main>
+    <aside>
+        <div class="aside">
+        <h3 class="aside">マーケットレポート</h3>
+        <ul class="aseide">
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+         </ul>              
+        </div> <!--aside end-->
+
+        <div class="aside">
+            <h3 class="aside">エクイティ</h3>
+            <ul class="aseide">
+                <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>
+             </ul>              
+            </div> <!--aside end-->
+    
+    </aside>
+
+    <footer>
+    Copyright © tokaitokyo.sec All Rights Reserved.
+    </footer>
+
+</body>
+</html>
+
+
+
+sanitize.css************************************************************
+
+/* Document
+ * ========================================================================== */
+
+/**
+ * Add border box sizing in all browsers (opinionated).
+ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+ * 1. Add text decoration inheritance in all browsers (opinionated).
+ * 2. Add vertical alignment inheritance in all browsers (opinionated).
+ */
+
+::before,
+::after {
+  text-decoration: inherit; /* 1 */
+  vertical-align: inherit; /* 2 */
+}
+
+/**
+ * 1. Use the default cursor in all browsers (opinionated).
+ * 2. Change the line height in all browsers (opinionated).
+ * 3. Use a 4-space tab width in all browsers (opinionated).
+ * 4. Remove the grey highlight on links in iOS (opinionated).
+ * 5. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ * 6. Breaks words to prevent overflow in all browsers (opinionated).
+ */
+
+html {
+  cursor: default; /* 1 */
+  line-height: 1.5; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+  -webkit-tap-highlight-color: transparent /* 4 */;
+  -ms-text-size-adjust: 100%; /* 5 */
+  -webkit-text-size-adjust: 100%; /* 5 */
+  word-break: break-word; /* 6 */
+}
+
+/* Sections
+ * ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Edge, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+ * ========================================================================== */
+
+/**
+ * Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
+ */
+
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ul dl {
+  margin: 0;
+}
+
+/**
+ * Remove the margin on nested lists in Edge 18- and IE.
+ */
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0;
+}
+
+/**
+ * 1. Add the correct sizing in Firefox.
+ * 2. Show the overflow in Edge 18- and IE.
+ */
+
+hr {
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Remove the list style on navigation lists in all browsers (opinionated).
+ */
+
+nav ol,
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+ * ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Add the correct text decoration in Edge 18-, IE, and Safari.
+ */
+
+abbr[title] {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/* Embedded content
+ * ========================================================================== */
+
+/*
+ * Change the alignment on media elements in all browsers (opinionated).
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on iframes in all browsers (opinionated).
+ */
+
+iframe {
+  border-style: none;
+}
+
+/**
+ * Remove the border on images within links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Change the fill color to match the text color in all browsers (opinionated).
+ */
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Tabular data
+ * ========================================================================== */
+
+/**
+ * Collapse border spacing in all browsers (opinionated).
+ */
+
+table {
+  border-collapse: collapse;
+}
+
+/* Forms
+ * ========================================================================== */
+
+/**
+ * Remove the margin on controls in Safari.
+ */
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+/**
+ * 1. Show the overflow in IE.
+ * 2. Remove the inheritance of text transform in Edge 18-, Firefox, and IE.
+ */
+
+button {
+  overflow: visible; /* 1 */
+  text-transform: none; /* 2 */
+}
+
+/**
+ * Correct the inability to style buttons in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * 1. Change the inconsistent appearance in all browsers (opinionated).
+ * 2. Correct the padding in Firefox.
+ */
+
+fieldset {
+  border: 1px solid #a0a0a0; /* 1 */
+  padding: 0.35em 0.75em 0.625em; /* 2 */
+}
+
+/**
+ * Show the overflow in Edge 18- and IE.
+ */
+
+input {
+  overflow: visible;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge 18- and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ */
+
+legend {
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in Edge 18- and IE.
+ * 2. Add the correct vertical alignment in Chrome, Edge, and Firefox.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the inheritance of text transform in Firefox.
+ */
+
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Remove the margin in Firefox and Safari.
+ * 2. Remove the default vertical scrollbar in IE.
+ * 3. Change the resize direction in all browsers (opinionated).
+ */
+
+textarea {
+  margin: 0; /* 1 */
+  overflow: auto; /* 2 */
+  resize: vertical; /* 3 */
+}
+
+/**
+ * Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  padding: 0;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome, Edge, and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ */
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style upload buttons in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding of focus outlines in Firefox.
+ */
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus outline styles unset by the previous rule in Firefox.
+ */
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove the additional :invalid styles in Firefox.
+ */
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/* Interactive
+ * ========================================================================== */
+
+/*
+ * Add the correct display in Edge 18- and IE.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct styles in Edge 18-, IE, and Safari.
+ */
+
+dialog {
+  background-color: white;
+  border: solid;
+  color: black;
+  display: block;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+ * ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* User interaction
+ * ========================================================================== */
+
+/*
+ * 1. Remove the tapping delay in IE 10.
+ * 2. Remove the tapping delay on clickable elements
+      in all browsers (opinionated).
+ */
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation; /* 1 */
+  touch-action: manipulation; /* 2 */
+}
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* Accessibility
+ * ========================================================================== */
+
+/**
+ * Change the cursor on busy elements in all browsers (opinionated).
+ */
+
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+/*
+ * Change the cursor on control elements in all browsers (opinionated).
+ */
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+/*
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements in all browsers (opinionated).
+ */
+
+[aria-disabled="true"],
+[disabled] {
+  cursor: not-allowed;
+}
+
+/*
+ * Change the display on visually hidden accessible elements
+ * in all browsers (opinionated).
+ */
+
+[aria-hidden="false"][hidden] {
+  display: initial;
+}
+
+[aria-hidden="false"][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+
+
+
+style.css************************************************************
+
+
+
+
+@charset "UTF-8";
+
+/*全体の設定
+==================================================*/
+
+body{
+    font-family: sans-serif;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-size: 16px;
+    color:rgb(7, 7, 34);
+    background-color: rgb(244, 247, 255);
+
+/* body内　2カラムの配置設定
+===========================================*/
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 200px 1fr 100px ;
+    grid-template-columns: 350px 1fr ;
+    grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+}
+
+header{
+    grid-area: header;
+    height: 180px;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    grid-area: main;
+    border-top: red;
+    margin: 20px 50px 0 30px ;
+}
+
+aside{
+    background-color: rgb(255, 255, 255);
+    grid-area: aside;
+    margin: 20px 30px 0 50px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(44, 44, 44);
+    grid-area: footer;
+}
+
+/*全体の設定
+==================================================*/
+
+#container{
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/*全体：リンクの設定
+==================================================*/
+
+a {
+    color:rgb(19, 17, 131);    
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+/*ヘッダー
+==================================================*/
+header{
+    font-weight: bold;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+}
+
+.title{
+    color: white;
+    font-size: 40px;
+    background-color: #fdac31;
+    background-image: linear-gradient(180deg, #f5c541 0%, #fb9912 50%, #fdde88 100%);
+/*    background-color: rgb(250, 127, 56);*/
+    padding: 10px;
+    margin-top: 5px;/*タイトルの上に表示させたい場合ここを拡張*/
+    width: 100%;
+    text-align: center;
+}
+
+ul#navigation {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    width: 70%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+
+ul#navigation li{
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #5d5d5d;
+    list-style: none;
+
+}
+
+/*アンダーラインの設定　参考：https://diwao.com/2017/06/css-hover-underline-animation.html
+===========================================*/
+
+.underline {
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  
+  .underline::after {
+    background-color:rgb(15, 13, 112);
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: .3s all;
+    width: 0;
+  }
+  
+  .underline:hover::after {
+    width: 100%;
+  }
+
+/*main
+================================================*/
+.flex-container {
+    margin: 30px ;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: flex-start;
+}
+
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.2em;
+    box-shadow: 3px 3px 5px 2px rgba(69, 69, 69, 0.5);
+    width: 230px;
+    height: 130px;
+    border-radius: 3px;
+    position: relative;
+    margin: 40px 20px 30px 40px;
+  }
+  
+.menu1 {
+    box-shadow: 3px 3px 5px 2px rgba(226, 194, 135, 0.712);
+}  
+
+.menu2 {
+    box-shadow: 3px 3px 5px 2px rgba(175, 188, 226, 0.993);
+}  
+
+.menu3 {
+    box-shadow: 3px 3px 5px 2px rgba(199, 152, 162, 0.836);
+}  
+
+
+.flex-item::before, .flex-item::after {
+    content: "";
+    position: absolute;
+  }
+  
+  .flex-item::before {
+    content: "";
+    display: block;
+  }
+  
+  .flex-item::after {
+    content: "";
+    display: block;
+  }
+
+
+
+/*aside
+================================================*/
+aside {
+
+}
+
+.aside h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(15, 13, 112);
+    padding: 0 10px;
+    margin-bottom: 0;
+    border-bottom: 4px solid rgb(19, 17, 131);
+}
+
+.aside {
+    margin: 10px 5px 80px 5px;
+}
+
+aside li {
+    border-bottom: 1px dashed rgb(131, 131, 136);
+    padding: 3px;
+    margin: 5px 20px 5px -10px;
+
+}
+
+/*aside list-style
+================================================*/
+
+
+
+
+/*footer
+================================================*/
+footer {
+    width: 100%;
+    height: 100px;
+    padding-top: 45px;
+    margin: 70px 0 0 0;
+    text-align: center;
+    color: #fff;
+    background-color: #020202;
+}
+
+
+
+
+
+
+
+
+style_2.css************************************************************
+
+
+@charset "UTF-8";
+
+/*全体の設定
+==================================================*/
+
+body{
+    font-family: sans-serif;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    font-size: 16px;
+    color:rgb(7, 7, 34);
+    background-color: rgb(244, 247, 255);
+
+/* body内　2カラムの配置設定
+===========================================*/
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 170px 1fr 100px ;
+    grid-template-columns: 320px 1fr ;
+    grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+}
+
+header{
+    grid-area: header;
+    height: 140px;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    grid-area: main;
+    border-top: red;
+    margin: 0 40px 0 30px ;
+}
+
+aside{
+    background-color: rgb(255, 255, 255);
+    grid-area: aside;
+    margin: 0 30px 0 40px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(44, 44, 44);
+    grid-area: footer;
+}
+
+/*全体の設定
+==================================================*/
+
+#container{
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/*全体：リンクの設定
+==================================================*/
+
+a {
+    color:rgb(19, 17, 131);    
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+/*ヘッダー
+==================================================*/
+header{
+    font-weight: bold;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+}
+
+header .menu {
+    width: 100%;
+    margin: 5px 5px;
+}
+
+.flex-nav {
+    font-size: 14px;
+    display:flex;
+    text-align: center;
+    justify-content:space-around;
+    list-style:none;
+    padding: 0;
+}
+
+.menu ul li a:hover{
+  background:rgb(145, 169, 248);
+}
+
+.menu ul li a{
+  display:block;
+  text-decoration:none;
+}
+
+
+.title{
+    color: white;
+    font-size: 30px;
+    background-color: #fdac31;
+    background-image: linear-gradient(180deg, #f5c541 0%, #fb9912 50%, #fdde88 100%);
+    padding: 10px;
+    margin-top: 20px;/*タイトルの上に表示させたい場合ここを拡張*/
+    width: 100%;
+    text-align: left;
+    padding-left: 50px;    
+}
+
+
+/*アンダーラインの設定　参考：https://diwao.com/2017/06/css-hover-underline-animation.html
+===========================================*/
+
+.underline {
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  
+  .underline::after {
+    background-color:rgb(15, 13, 112);
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: .3s all;
+    width: 0;
+  }
+  
+  .underline:hover::after {
+    width: 100%;
+  }
+
+/*main
+================================================*/
+
+main {
+    padding: 10px 20px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(15, 13, 112);
+    padding: 0 10px;
+    margin-bottom: 0;
+    border-bottom: 3px solid rgb(15, 13, 112);        
+}
+
+.grid-item{
+    background-color: #fdac31;
+}
+
+.container.market {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: aqua;
+    text-align: center;
+}
+
+/*aside
+================================================*/
+
+
+.aside h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(15, 13, 112);
+    padding: 0 10px;
+    margin-bottom: 0;
+    border-bottom: 2px solid rgb(255, 187, 109);
+}
+
+.aside {
+    margin: 10px 5px 40px 5px;
+}
+
+aside li {
+    border-bottom: 1px dashed rgb(131, 131, 136);
+    padding: 2px;
+    margin: 5px 20px 5px -10px;
+
+}
+
+/*aside list-style
+================================================*/
+
+
+
+
+/*footer
+================================================*/
+footer {
+    width: 100%;
+    height: 100px;
+    padding-top: 45px;
+    margin: 70px 0 0 0;
+    text-align: center;
+    color: #fff;
+    background-color: #020202;
+}
+
+
+
+
