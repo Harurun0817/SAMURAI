@@ -1,14 +1,14 @@
 console.log("ok");
 
 // ボタン、モダル、モダルの閉じるボタン、オーバーレイを変数に格納
-const btn = document.querySelector('.btn');
+const restate = document.querySelector('.restate');
 const modal = document.querySelector('.my_modal');
 const closeBtn = document.querySelector('.close');
 const overlay = document.querySelector('.overlay');
 
 
 // ボタンをクリックしたら、モダルとオーバーレイに.activeを付ける
-btn.addEventListener('click', function(e){
+restate.addEventListener('click', function(e){
     // aタグのデフォルトの機能を停止する    
     console.log("test");
     e.preventDefault();
@@ -38,6 +38,7 @@ window.onload = function () {
 
 
 let x = 100;
+function normal()  { document.documentElement.style.fontSize = '100%'; }
 function larger()  { x *= 1.2; document.documentElement.style.fontSize = x + '%'; }
 function smaller() { x /= 1.2; document.documentElement.style.fontSize = x + '%'; }
 

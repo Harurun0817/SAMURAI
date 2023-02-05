@@ -1,3 +1,6 @@
+html {
+  font-size: 16px;
+}
 
 body{
   font-family: sans-serif;
@@ -43,7 +46,7 @@ header .bg-primary {
 
 
 /* ボタンのデザイン   */
-.btn {
+.restate {
   display: inline-block;
   position: fixed;
   /* text-decoration: none; */
@@ -61,7 +64,7 @@ header .bg-primary {
 
 }
 
-.btn:hover {
+.restate:hover {
   color: #fff ;
   background-color: rgb(15, 13, 112);
 }
@@ -149,6 +152,10 @@ header .bg-primary {
 
 .my_modal>.close, .my_modal>p {
   cursor: pointer;
+}
+
+h3.aside {
+  background: linear-gradient(transparent 85%, #141f53 50%);
 }
 
 /* 追加おわり */
