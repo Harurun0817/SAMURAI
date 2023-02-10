@@ -8,6 +8,11 @@
 	<title>マーケットレポート ❘ エクイティ</title>
 	<link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+	<script src="js/infomation.js"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -146,6 +151,26 @@
 				</div>
 
 				<h2 class="alert alert-primary mt-5">絞り込み式リスト</h2>
+				<div id="infomation"></div>
+				<script>
+				$("#infomation").jsGrid({
+					height: "35rem",
+					width: "100%",
+					filtering: true,
+					editing: true,
+					sorting: true,
+					paging: true,
+					autoload: true,
+					pageSize: 10,
+					pageButtonCount: 5,
+					controller: db,
+					fields: [
+						{ name: "date", title: "日時", type: "text", width: 100 },
+						{ name: "title", title: "タイトル", type: "text", width: 200 },
+						{ name: "category", title: "カテゴリー", type: "select", items: db.categories, valueField: "id", textField: "name", width: 100 }
+					]
+				});
+				</script>
 
 				<h2 class="alert alert-primary mt-5">ニュースリスト形式</h2>
 
