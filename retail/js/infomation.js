@@ -3,7 +3,9 @@
     loadData: function (filter) {
       return $.grep(this.infomation, function (info) {
         return (!filter.date || info.date.indexOf(filter.date) > -1)
+          && (!filter.limit || info.limit.indexOf(filter.limit) > -1)
           && (!filter.title || info.title.indexOf(filter.title) > -1)
+          && (!filter.contact || info.contact.indexOf(filter.contact) > -1)
           && (!filter.category || info.category === filter.category);
       });
     }
@@ -18,20 +20,95 @@
     { id: 3, name: "事務連絡" }
   ];
 
-  db.infomation = [
-    { date: "2022.9.1", title: "aaaaaaaaa", category: 1 },
-    { date: "2022.9.2", title: "bbb", category: 1 },
-    { date: "2022.9.3", title: "ccc", category: 2 },
-    { date: "2022.9.4", title: "ddd", category: 3 },
-    { date: "2022.9.5", title: "eee", category: 3 },
-    { date: "2022.9.6", title: "fff", category: 3 },
-    { date: "2022.9.7", title: "fff", category: 3 },
-    { date: "2022.9.8", title: "fff", category: 3 },
-    { date: "2022.9.9", title: "fff", category: 3 },
-    { date: "2022.9.10", title: "fff", category: 3 },
-    { date: "2022.9.11", title: "fff", category: 3 },
-    { date: "2022.9.12", title: "fff", category: 3 },
-    { date: "2022.9.13", title: "fff", category: 3 },
+  db.infomation = [ // 配列
+    {
+      date: "2022.9.1",
+      limit: "2023.2.14",
+      title: "aaaaaaaa",
+      link: "https://infomaion2.co.jp",
+      category: 1,
+      contact: "iuiuiuiuiu",
+    },
+    {
+      date: "2022.9.2",
+      limit: "2023.2.15",
+      title: "aaaaaaaa",
+      link: "https://infomaion2.co.jp",
+      category: 1,
+      contact: "iuiuiuiuiu",
+    },
+    {
+      date: "2022.9.3",
+      limit: "2023.2.16",
+      title: "aaaaaaaa",
+      link: "https://infomaion2.co.jp",
+      category: 1,
+      contact: "iuiuiuiuiu",
+    },
+    {
+      date: "2022.9.4",
+      limit: "2023.2.17",
+      title: "aaaaaaaa",
+      link: "https://infomaion2.co.jp",
+      category: 2,
+      contact: "iuiuiuiuiu",
+    },
+    {
+      date: "2022.9.5",
+      limit: "2023.2.18",
+      title: "bbb",
+      link: "https://infomaion2.co.jp",
+      category: 3,
+      contact: "hhhhhhhhh",
+    },
+    {
+      date: "2022.9.1",
+      limit: "2023.2.14",
+      title: "aaaaaaaa",
+      link: "https://infomaion2.co.jp",
+      category: 1,
+      contact: "iuiuiuiuiu",
+    },
+    {
+      date: "2022.9.1",
+      limit: "2023.2.14",
+      title: "aaaaaaaa",
+      link: "https://infomaion2.co.jp",
+      category: 1,
+      contact: "iuiuiuiuiu",
+    },
+    {
+      date: "2022.9.1",
+      limit: "2023.2.14",
+      title: "aaaaaaaa",
+      link: "https://infomaion2.co.jp",
+      category: 1,
+      contact: "iuiuiuiuiu",
+    },
+    {
+      date: "2022.9.1",
+      limit: "2023.2.14",
+      title: "aaaaaaaa",
+      link: "https://infomaion2.co.jp",
+      category: 1,
+      contact: "iuiuiuiuiu",
+    },
+    {
+      date: "2022.9.1",
+      limit: "2023.2.14",
+      title: "aaaaaaaa",
+      link: "https://infomaion2.co.jp",
+      category: 1,
+      contact: "iuiuiuiuiu",
+    },
+    {
+      date: "2022.9.1",
+      limit: "2023.2.14",
+      title: "aaaaaaaa",
+      link: "https://infomaion2.co.jp",
+      category: 1,
+      contact: "iuiuiuiuiu",
+    },
   ];
 
 }());

@@ -157,17 +157,19 @@
 					height: "35rem",
 					width: "100%",
 					filtering: true,
-					editing: true,
-					sorting: true,
+					// editing: true,
+					sorting: false,
 					paging: true,
 					autoload: true,
-					pageSize: 10,
+					pageSize: 100,
 					pageButtonCount: 5,
 					controller: db,
 					fields: [
 						{ name: "date", title: "日時", type: "text", width: 100 },
+						{ name: "limit", title: "期限", type: "text", width: 100 },
 						{ name: "title", title: "タイトル", type: "text", width: 200 },
-						{ name: "category", title: "カテゴリー", type: "select", items: db.categories, valueField: "id", textField: "name", width: 100 }
+						{ name: "category", title: "カテゴリー", type: "select", items: db.categories, valueField: "id", textField: "name", width: 100 },
+						{ name: "contact", title: "問合せ先", type:"text", width: 150 }
 					]
 				});
 				</script>
