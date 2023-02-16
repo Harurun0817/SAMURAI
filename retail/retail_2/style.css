@@ -1,0 +1,291 @@
+html {
+  font-size: 16px;
+  height: 100%; /* フッターが上に上がってきちゃう対策用 */
+}
+body {
+  height: 100%; /* フッターが上に上がってきちゃう対策用 */
+}
+footer {
+  position: sticky; /* フッターが上に上がってきちゃう対策用 */
+  top: 100vh; /* フッターが上に上がってきちゃう対策用 */
+  width: 100%; /* フッターが上に上がってきちゃう対策用 */
+  z-index: -1; /* フッターが上に上がってきちゃう対策用 */
+}
+
+body{
+  font-family: sans-serif;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  color:rgb(7, 7, 34);
+  background-color: rgb(244, 247, 255);
+}
+
+a {
+  text-decoration: none;
+  color:rgb(19, 17, 131);    
+}
+
+.main {
+  height: 100vh;
+}
+
+.card {
+  text-align: center;
+  font-weight: bold;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-item:not(:last-child):not(:first-child):after {
+  content:"|" ;
+  font-size: 3rem;
+  /* font: 1px!important; */
+  color: rgb(126, 126, 126);
+  padding: 0;
+}
+
+header .bg-primary {
+  font-size: 2.5rem !important;
+  background-color: #fdac31 !important;
+  /* background-image: linear-gradient(180deg, #f5c541 0%, #fb9912 50%, #fdde88 100%) !important; */
+}
+
+/* TOPのnavの設定--------------------------------- */
+.top-navi {
+  font-size: 1.2rem;
+  min-height: 3.5rem; 
+  font-weight: bold;
+}
+
+.top-navi a {
+  color:rgb(19, 17, 131)!important;    
+  min-width: 9.5rem;
+}
+
+.top-navi a:hover {
+  transform: scale(1.03);
+}
+
+.nav-link {
+  display: inline-block;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.nav-link::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  display: block;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:rgb(15, 13, 112);
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  width: 0;
+}
+
+.nav-link:hover::after {
+  width: 90%;
+}
+
+
+
+/* =ポップアップ 参考:https://codepen.io/orange-notebook/pen/wvojxWe=*/
+
+/* ボタンのデザイン   */
+.restate {
+  display: inline-block;
+  position: fixed;
+  /* text-decoration: none; */
+  bottom: 50px;
+  right: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 1px solid rgb(15, 13, 112);
+  background-color: #fff;
+  /* background: linear-gradient(180deg, #f5c541 0%, #fb9912 50%, #fdde88 100%); */
+  border-radius: 5px;
+  color: rgb(15, 13, 112);
+  margin: 30px;
+  transition: 0.2s;
+
+}
+
+.restate:hover {
+  color: #fff ;
+  background-color: rgb(15, 13, 112);
+}
+
+/*------------------ オーバーレイ -------------------*/
+.overlay {
+  /* 位置を固定 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* 画面にいっぱいに広がるように設定 */
+  width: 100%;
+  height: 100vh;
+  /* rgbaを使って60%の黒いオーバーレイにする */
+  background: rgba(0,0,0,0.6);
+
+  /* デフォルトでは見えないようにする */
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+/* activeクラスのついたときにオーバーレイを表示する */
+.overlay .active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* モーダルウインドウ */
+.my_modal {
+  max-width: 500px;
+  width: 86%;
+  padding: 0;
+  background: rgb(253, 252, 252);
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  transform: translate(-10%, -20%);
+  /* デフォルトでは非表示 */
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.my_modal h2 {
+  /* background-color:  rgb(15, 13, 112); */
+  /* color: #FFF; */
+  /* padding: 10px; */
+}
+
+.my_modal_body {
+  padding: 10px;
+}
+
+/* activeクラスのついたときのモーダルウインドウ */
+.my_modal.active {
+  opacity: 1;
+  visibility: visible;
+  animation: anim 1s forwards;
+
+}
+
+@keyframes anim {
+  0% {
+  transform: translateY(-300px);
+  }
+
+  100% {
+  transform: translateY(-50px);
+  }
+}
+
+.my_modal .close {
+  font-size: 1.875rem;
+}
+
+.my_modal h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.my_modal p {
+  font-size: 1rem;
+}
+
+.my_modal>.close, .my_modal>p {
+  cursor: pointer;
+}
+
+h3.aside {
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.3rem;
+  background: linear-gradient(transparent 90%, #141f53 50%);
+}
+
+.border-6 {
+  border-width: 1rem !important;
+}
+
+.font-size-change button {
+  font-size: 16px;
+  border-radius: 50%;
+
+}
+
+header.title {
+  color: white;
+  font-size: 2.4rem;
+  background-color: #fdac31;
+  background-image: linear-gradient(180deg, #f5c541 0%, #fb9912 50%, #fdde88 100%);
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+}
+.bg-light {
+  background-color: rgb(244, 247, 255) !important;
+}
+.border-light {
+  border-color: rgb(244, 247, 255) !important;
+}
+.border-end-weight {
+  border-right-width: 2.5rem !important;
+}
+.border-start-weight {
+  border-left-width: 2.5rem !important;
+}
+.border-top-weight  {
+  border-top-width: 2.5rem !important;
+}
+
+
+.child_menu>li>a {
+  font-size: 1rem;
+}
+
+.child_menu {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  padding: 0.5rem;
+  color: #333;
+  background-color:rgb(255, 255, 255);
+  border: solid #00000020;
+  border-width: 0 1px 1px 1px;
+  visibility: hidden;
+}
+.menu {
+  position: relative;
+}
+.menu:hover .child_menu {
+  visibility: visible;
+}
+
+.child_menu a:hover {
+  color: #fff;
+}
+
+.card-top .card {
+  box-shadow: 3px 3px 5px 2px rgb(226 194 135 / 71%);
+}
+
+img.img-fit-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+/* 追加おわり */
