@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リテールOne-Stop</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+  <header class="title"></header>
+
+  <nav class="navbar navbar-expand navbar-light bg-white">
+    <div class="container-fluid">
+      <div class="row w-100">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <div class="d-flex align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 w-100 top-navi justify-content-center text-center">
+                <li class="nav-item pe-3 pb-2 nav-line">
+                  各種申請 >>
+                </li>
+                <li class="nav-item nav-line">
+                  <a class="nav-link" href="#">準備状況報告</a>
+                </li>
+                <li class="nav-item nav-line">
+                  <a class="nav-link" href="#">明るいニュース</a>
+                </li>
+                <li class="nav-item nav-line">
+                  <a class="nav-link" href="#">実績修正</a>
+                </li>
+                <li class="nav-item nav-line">
+                  <a class="nav-link" href="#">※組織図掲示</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 justify-content-center text-center">
+          <!-- <div class="font-size-change">
+            <button class="btn btn-sm btn-outline-info" type="button" onclick="smaller()">小</button>
+            <button class="btn btn-sm btn-outline-info" type="button" onclick="normal()">中</button>
+            <button class="btn btn-sm btn-outline-info" type="button" onclick="larger()">大</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row bg-white g-1 g-sm-2 g-md-3">
+
+      <div class="col-3 p-3 border border-light border-6 border-start-weight border-top-weight">
+        <div id="sideMenu"></div>
+      </div>
+
+      <div class="col-9 border border-light border-6 border-end-weight border-start-weight border-top-weight">
+        <div class="p-5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-1 g-sm-2 g-md-3 g-lg-4 card-top">
+            <div class="col g-5">
+              <div class="card card_1 h-100 menu">
+                <div class="card-body">
+                  <a href="index_market.html">マーケットレポート<br>エクイティ</a>
+                  <ul class="child_menu list-unstyled">
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col g-5">
+              <div class="card card_1 h-100 menu">
+                <div class="card-body">
+                  <a href="index_toushin_saiken.html">投資信託<br>債券/その他</a>
+                  <ul class="child_menu list-unstyled">
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col g-5">
+              <div class="card card_1 h-100 menu">
+                <div class="card-body">
+                  <a href="index_solution.html">ソリューション<br>FP関連情報</a>
+                  <ul class="child_menu list-unstyled">
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col g-5">
+              <div class="card card_1 h-100 menu">
+                <div class="card-body">
+                  <a href="#">リテールカレンダー<br>（募集商品情報）</a>
+                  <ul class="child_menu list-unstyled">
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col g-5">
+              <div class="card card_2 h-100 menu">
+                <div class="card-body">
+                  <a href="index_shikaku.html">勉強会カレンダー<br>資格/研修</a>
+                  <ul class="child_menu list-unstyled">
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col g-5">
+              <div class="card card_2 h-100 menu">
+                <div class="card-body">
+                  <a href="index_gyouren.html">業務連絡/通達<br>BCP</a>
+                  <ul class="child_menu list-unstyled">
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col g-5">
+              <div class="card card_3 h-100 menu">
+                <div class="card-body">
+                  <a href="index_cs_wakate.html">部店内CS<br>若手営業員</a>
+                  <ul class="child_menu list-unstyled">
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col g-5">
+              <div class="card card_3 h-100 menu">
+                <div class="card-body">
+                  <a href="index_seisansei.html">ベルフェイス<br>活用ツール</a>
+                  <ul class="child_menu list-unstyled">
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                    <li><a href="#">Child Menu 1</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--   ポップアップ -->
+
+  <!-- クリックしたらモーダルを表示するボタン -->
+  <!-- <a href="#" class="restate">勉強会情報を再表示</a> -->
+
+  <!-- オーバーレイ -->
+  <!-- <div class="overlay"></div> -->
+
+  <!-- モーダルウィンドウ -->
+  <!-- <div class="my_modal">
+    <div class="d-flex justify-content-between align-items-center bg-primary text-white p-3">
+      <h2 class="m-0">本日1/23開催　投信勉強会</h2>
+      <div class="close">&times</div>
+    </div>
+    <div class="my_modal_body">
+      <p><a href="https://codepen.io/orange-notebook/pen/wvojxWe" target="_blank">
+          10:00~11:00<br>&nbsp;
+          (必須) 投資情報部 インド株式投信勉強会 （Teams）
+      </p></a>
+      <p><a href="https://codepen.io/orange-notebook/pen/wvojxWe" target="_blank">
+          15:30~16:30<br>&nbsp;
+          (任意) ゴールドマンサックス主催 （Webex）
+      </p></a>
+    </div>
+  </div> -->
+
+  <!-- 追加おわり -->
+
+  <footer class="text-center py-4 bg-dark text-white"></footer>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="js/top.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>
