@@ -1,54 +1,52 @@
-header();
-nav();
-sideMenu();
-footer();
+window.onload = function(){
+  header();
+  nav();
+  sideMenu();
+  footer();
+}
 function header() {
-  fetch('components/header.html')
-    .then(res => res.text())
-    .then(data => {
-      const header = document.getElementsByTagName('header');
-      header[0].innerHTML = data;
-    });
+  axios.get('components/header.html')
+    .then(res => {
+      var header = document.getElementsByTagName('header');
+      header[0].innerHTML = res.data;
+    }).catch(err => console.error(err));
 }
 function nav() {
-  fetch('components/nav.html')
-    .then(res => res.text())
-    .then(data => {
-      const nav = document.getElementsByTagName('nav');
-      nav[0].innerHTML = data;
-    });
+  axios.get('components/nav.html')
+    .then(res => {
+      var nav = document.getElementsByTagName('nav');
+      nav[0].innerHTML = res.data;
+    }).catch(err => console.error(err));
 }
 function sideMenu() {
-  fetch('components/sidemenu.html')
-    .then(res => res.text())
-    .then(data => {
-      const sideMenu = document.getElementById('sideMenu');
-      sideMenu.innerHTML = data;
-    });
+  axios.get('components/sidemenu.html')
+    .then(res => {
+      var sideMenu = document.getElementById('sideMenu');
+      sideMenu.innerHTML = res.data;
+    }).catch(err => console.error(err));
 }
 function footer() {
-  fetch('components/footer.html')
-    .then(res => res.text())
-    .then(data => {
-      const footer = document.getElementsByTagName('footer');
-      footer[0].innerHTML = data;
-    });
+  axios.get('components/footer.html')
+    .then(res => {
+      var footer = document.getElementsByTagName('footer');
+      footer[0].innerHTML = res.data;
+    }).catch(err => console.error(err));
 }
-const x = 2;
+var x = 2;
 function getFontSize(){
-  const root = document.documentElement;
-  const style = window.getComputedStyle(root).getPropertyValue('font-size');
+  var root = document.documentElement;
+  var style = window.getComputedStyle(root).getPropertyValue('font-size');
   return parseFloat(style);
 }
 function normal(){
-  const fs = getFontSize();
+  var fs = getFontSize();
   document.documentElement.style.fontSize = '16px';
 }
 function larger(){
-  const fs = getFontSize();
+  var fs = getFontSize();
   document.documentElement.style.fontSize = (fs + x) + 'px';
 }
 function smaller(){
-  const fs = getFontSize();
+  var fs = getFontSize();
   document.documentElement.style.fontSize = (fs - x) + 'px';
 }
