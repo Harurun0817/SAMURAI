@@ -1,17 +1,22 @@
-header();
-// nav();
-sideMenu();
-footer();
+window.onload = function(){
+  header();
+  // nav();
+  sideMenu();
+  footer();
+}
 function header() {
   fetch('components/header.html')
     .then(res => res.text())
     .then(data => {
       const header = document.getElementsByTagName('header');
       header[0].innerHTML = data;
+    })
+    .catch(error => {
+      console.log("読み込み失敗");
     });
 }
 // function nav() {
-//   fetch('components/nav.html')
+//   axios.get('components/nav.html')
 //     .then(res => res.text())
 //     .then(data => {
 //       const nav = document.getElementsByTagName('nav');
@@ -19,7 +24,7 @@ function header() {
 //     });
 // }
 function sideMenu() {
-  fetch('components/sidemenu.html')
+  axios.get('components/sidemenu.html')
     .then(res => res.text())
     .then(data => {
       const sideMenu = document.getElementById('sideMenu');
@@ -27,7 +32,7 @@ function sideMenu() {
     });
 }
 function footer() {
-  fetch('components/footer.html')
+  axios.get('components/footer.html')
     .then(res => res.text())
     .then(data => {
       const footer = document.getElementsByTagName('footer');
