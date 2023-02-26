@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html {
   font-size: 16px;
   height: 100%; /* フッターが上に上がってきちゃう対策用 */
@@ -227,7 +229,23 @@ header.title {
 }
 
 .card-top .card {
-  box-shadow: 3px 3px 5px 2px rgb(226 194 135 / 71%);
+  border-right-width: medium;
+  border-bottom-width: medium;
+  /* border-color: #e2c287b5 !important; */
+  filter: blur(5px) !important;
+
+  border-image: linear-gradient(160deg, #d6d6d6 0%, #d6d6d6 40%, #d1c341 50%, #ffc500 100%);
+  border-image-slice: 1;
+
+  /* text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4); */
+  /* filter: drop-shadow(0 0px 3px rgba(0, 0, 0, .9)) !important; */
+  /* -ms-box-shadow: 3px 3px 5px 2px rgb(226 194 135 / 71%) !important; */
+  /* box-shadow: 3px 3px 5px 2px rgb(226 194 135 / 71%) !important; */
+
+  /* -moz-box-shadow: 0 0 5px #555 !important; */
+  /* -o-box-shadow: 0 0 5px #555 !important; */
+  /* -ms-box-shadow: 0 0 5px #555 !important; */
+  /* filter: progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=0, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=90, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=180, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=270, strength=3, enabled=true); */
 }
 
 img.img-fit-portrait {
@@ -237,3 +255,14 @@ img.img-fit-portrait {
   object-position: left;
 }
 /* 追加おわり */
+
+/* 2023.02.26 IE対策追加 */
+.col {
+  padding: 1rem;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
