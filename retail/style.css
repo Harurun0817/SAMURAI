@@ -232,7 +232,7 @@ header.title {
   border-right-width: medium;
   border-bottom-width: medium;
   /* border-color: #e2c287b5 !important; */
-  filter: blur(5px) !important;
+  /* filter: blur(5px) !important; */
 
   border-image: linear-gradient(160deg, #d6d6d6 0%, #d6d6d6 40%, #d1c341 50%, #ffc500 100%);
   border-image-slice: 1;
