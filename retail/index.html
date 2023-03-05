@@ -26,6 +26,8 @@
         <div id="sideMenu"></div>
       </div>
 
+      <div class="backGray"></div>
+
       <div class="col-9 border border-light border-6 border-end-weight">
         <div class="p-3">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-1 g-sm-2 g-md-3 g-lg-4 card-top">
@@ -174,30 +176,40 @@
   <script src="js/top.js"></script>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js"
-    integrity="sha512-dmLpQXesGDP0ZM/s8zGKQU3Xlbix57QfwFNFh+BY5Ad/afObQ/lBo200mHWuHu8LOoI7tlK09yP3L/4DjdQ5Xw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js"></script>
   <script src="js/common.js"></script>
 
   <script>
     $(function () {
-      var setTimeoutConst;
+      // フッターを最下部に固定するための
+      let footer = $('footer');
+      Stickyfill.add(footer);
+
+      let setTimeoutConst;
       $('.card-body').hover(
+        // ホバーされたときの処理
         function () {
-          $('.card').css({"border-image": "linear-gradient(160deg, #d6d6d6 0%, #d6d6d6 40%, #d6d6d6 50%, #d6d6d6 100%)"});
-          $('.card-body').css({"background-color":"rgba(0, 0, 0, 0.3)"});
-          $(this).css({"background-color":""})
-          $(this).parent().css({"border-image":""})
-          console.log(width);
-          // $('.child_menu').css({"width":`${width}%`});
-          // $('#index_market_menu').fadeIn();
+          // $('.card').css({"border-image": "linear-gradient(160deg, #d6d6d6 0%, #d6d6d6 40%, #d6d6d6 50%, #d6d6d6 100%)"});
+          // $('.card-body').css({"background-color":"rgba(0, 0, 0, 0.3)"});
+          // $(this).parent().css({"border-image":""})
+          // $(this).css({"background-color":""})
+          // $('.backGray').show();
+          let header = $('header').height();
+          // let header = $('header').outerHeight();
+          $('.backGray').css({"top": header});
+          console.log(header);
+          $('.backGray').fadeIn(20);
           clearTimeout(setTimeoutConst);
         },
+        // ホバーが離れたときの処理
         function () {
           setTimeoutConst = setTimeout(function () {
-            $('.card-body').css({"background-color":""});
-            $('.card').css({"border-image": ""});
-          }, 10);
+            // $('.card-body').css({"background-color":""});
+            // $('.card-body').css({"background-color":""});
+            // $('.card').css({"border-image": ""});
+            $('.backGray').fadeOut(20);
+            // $('.backGray').hide();
+          }, 0); // ここの数字はアニメーションを始めるタイミング
         }
       );
     });

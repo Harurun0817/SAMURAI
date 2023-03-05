@@ -1,6 +1,5 @@
 $(function () {
-  let footer = $('footer');
-  Stickyfill.add(footer);
+
   $.ajax({
     type: 'GET',
     url: 'components/header.html',

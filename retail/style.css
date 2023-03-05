@@ -256,3 +256,13 @@ img.img-fit-portrait {
   object-fit: cover;
   object-position: center;
 }
+
+.backGray {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(7, 7, 34, 0.3)
+}
