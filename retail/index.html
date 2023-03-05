@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="top.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
 
 <body class="bg-light">
@@ -31,11 +33,11 @@
               <div class="card h-100 menu">
                 <div class="card-body">
                   <a href="index_market.html">マーケットレポート<br>エクイティ</a>
-                  <ul class="child_menu list-unstyled">
-                    <li><a href="#">Child Menu 1</a></li>
-                    <li><a href="#">Child Menu 1</a></li>
-                    <li><a href="#">Child Menu 1</a></li>
-                    <li><a href="#">Child Menu 1</a></li>
+                  <ul class="child_menu list-group">
+                    <li class="list-group-item"><a href="#">Child Menu 1</a></li>
+                    <li class="list-group-item"><a href="#">Child Menu 1</a></li>
+                    <li class="list-group-item"><a href="#">Child Menu 1</a></li>
+                    <li class="list-group-item"><a href="#">Child Menu 1</a></li>
                   </ul>
                 </div>
               </div>
@@ -171,10 +173,35 @@
   <script src="bootstrap.bundle.min.js"></script>
   <script src="js/top.js"></script>
 
-  
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js"
+    integrity="sha512-dmLpQXesGDP0ZM/s8zGKQU3Xlbix57QfwFNFh+BY5Ad/afObQ/lBo200mHWuHu8LOoI7tlK09yP3L/4DjdQ5Xw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/common.js"></script>
 
+  <script>
+    $(function () {
+      var setTimeoutConst;
+      $('.card-body').hover(
+        function () {
+          $('.card').css({"border-image": "linear-gradient(160deg, #d6d6d6 0%, #d6d6d6 40%, #d6d6d6 50%, #d6d6d6 100%)"});
+          $('.card-body').css({"background-color":"rgba(0, 0, 0, 0.3)"});
+          $(this).css({"background-color":""})
+          $(this).parent().css({"border-image":""})
+          console.log(width);
+          // $('.child_menu').css({"width":`${width}%`});
+          // $('#index_market_menu').fadeIn();
+          clearTimeout(setTimeoutConst);
+        },
+        function () {
+          setTimeoutConst = setTimeout(function () {
+            $('.card-body').css({"background-color":""});
+            $('.card').css({"border-image": ""});
+          }, 10);
+        }
+      );
+    });
+  </script>
 </body>
 
 </html>

@@ -1,37 +1,59 @@
-window.onload = function(){
-  header();
-  nav();
-  sideMenu();
-  footer();
-}
-function header() {
-  axios.get('components/header.html')
-    .then(res => {
-      var header = document.getElementsByTagName('header');
-      header[0].innerHTML = res.data;
-    }).catch(err => console.error(err));
-}
-function nav() {
-  axios.get('components/nav.html')
-    .then(res => {
-      var nav = document.getElementsByTagName('nav');
-      nav[0].innerHTML = res.data;
-    }).catch(err => console.error(err));
-}
-function sideMenu() {
-  axios.get('components/sidemenu.html')
-    .then(res => {
-      var sideMenu = document.getElementById('sideMenu');
-      sideMenu.innerHTML = res.data;
-    }).catch(err => console.error(err));
-}
-function footer() {
-  axios.get('components/footer.html')
-    .then(res => {
-      var footer = document.getElementsByTagName('footer');
-      footer[0].innerHTML = res.data;
-    }).catch(err => console.error(err));
-}
+$(function () {
+  let footer = $('footer');
+  Stickyfill.add(footer);
+  $.ajax({
+    type: 'GET',
+    url: 'components/header.html',
+    dataType: 'html',
+    success: function (data) {
+      let header = document.getElementsByTagName('header');
+      header[0].innerHTML = data;
+    },
+    error: function () {
+      alert('Include error header.');
+    }
+  });
+
+  $.ajax({
+    type: 'GET',
+    url: 'components/nav.html',
+    dataType: 'html',
+    success: function (data) {
+      let nav = document.getElementsByTagName('nav');
+      nav[0].innerHTML = data;
+    },
+    error: function () {
+      alert('Include error nav.');
+    }
+  });
+
+  $.ajax({
+    type: 'GET',
+    url: 'components/sidemenu.html',
+    dataType: 'html',
+    success: function (data) {
+      let sideMenu = document.getElementById('sideMenu');
+      sideMenu.innerHTML = data;
+    },
+    error: function () {
+      alert('Include error sidemenu.');
+    }
+  });
+
+  $.ajax({
+    type: 'GET',
+    url: 'components/footer.html',
+    dataType: 'html',
+    success: function (data) {
+      let footer = document.getElementsByTagName('footer');
+      footer[0].innerHTML = data;
+    },
+    error: function () {
+      alert('Include error footer.');
+    }
+  });
+});
+
 var x = 2;
 function getFontSize(){
   var root = document.documentElement;

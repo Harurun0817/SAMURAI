@@ -2,16 +2,6 @@
 
 html {
   font-size: 16px;
-  height: 100%; /* フッターが上に上がってきちゃう対策用 */
-}
-body {
-  height: 100%; /* フッターが上に上がってきちゃう対策用 */
-}
-footer {
-  position: sticky; /* フッターが上に上がってきちゃう対策用 */
-  top: 100vh; /* フッターが上に上がってきちゃう対策用 */
-  width: 100%; /* フッターが上に上がってきちゃう対策用 */
-  z-index: -1; /* フッターが上に上がってきちゃう対策用 */
 }
 
 body{
@@ -23,7 +13,7 @@ body{
 
 a {
   text-decoration: none;
-  color:rgb(19, 17, 131);    
+  color:rgb(19, 17, 131);
 }
 
 .main {
