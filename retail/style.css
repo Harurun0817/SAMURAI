@@ -190,6 +190,7 @@ header.title {
 .border-start-weight {
   border-left-width: 2.5rem !important;
 }
+
 .child_menu>li>a {
   font-size: 1rem;
 }
@@ -202,9 +203,9 @@ header.title {
   z-index: 100;
   padding: 0.5rem;
   color: #333;
-  background-color:rgb(255, 255, 255);
-  border: solid #00000020;
-  border-width: 0 1px 1px 1px;
+  /* background-color:rgb(255, 255, 255); */
+  /* border: solid #00000020; */
+  /* border-width: 0 1px 1px 1px; */
   visibility: hidden;
 }
 .menu {
@@ -265,4 +266,16 @@ img.img-fit-portrait {
   width: 100vw;
   height: 100vh;
   background-color:rgba(7, 7, 34, 0.3)
+}
+
+/* index2.html */
+
+.megaMenu .card-body {
+  position: relative;
+}
+.child_menu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 400px;
 }
