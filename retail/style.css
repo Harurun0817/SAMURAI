@@ -279,3 +279,40 @@ img.img-fit-portrait {
   left: 0;
   width: 400px;
 }
+
+ul.iconList{
+  list-style-type:none;
+  padding-left: 0.7rem;
+  /* margin-left: 1rem; */
+  /* text-indent: -1rem; */
+}
+.iconList li{
+  position: relative;
+  padding-left:20px;
+  border-bottom: solid 1px black;
+}
+.iconList li:before{
+  content: "\F119";
+  font-family: bootstrap-icons;
+  position: absolute;
+  top:0px;
+  left:0px;
+  border-bottom: 1px solid white;
+  /* z-index: 1; */
+}
+.iconList li::after {
+  border-bottom: 2.5px solid #fda520;
+  bottom: -1px;
+  content: '';
+  display: block;
+  height: 3px;
+  left: calc(50% + 0.5rem);
+  transform: translateX(-50%);
+  position: absolute;
+  transition: .5s all;
+  width: 0;
+}
+
+.iconList li:hover::after {
+  width: calc(100% - 1rem);
+}
