@@ -216,7 +216,7 @@ header.title {
 }
 
 .child_menu a:hover {
-  color: #fff;
+  /* color: #fff; */
 }
 
 .card-top .card {
