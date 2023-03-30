@@ -28,19 +28,6 @@ $(function () {
 
   $.ajax({
     type: 'GET',
-    url: 'components/sidemenu.html',
-    dataType: 'html',
-    success: function (data) {
-      let sideMenu = document.getElementById('sideMenu');
-      sideMenu.innerHTML = data;
-    },
-    error: function () {
-      alert('Include error sidemenu.');
-    }
-  });
-
-  $.ajax({
-    type: 'GET',
     url: 'components/footer.html',
     dataType: 'html',
     success: function (data) {

@@ -32,3 +32,56 @@ window.onload = function () {
     modal.classList.add('active');
     overlay.classList.add('active');
 };
+
+/**
+ * Topページ用のサイドメニュー生成
+ */
+$.ajax({
+  type: 'GET',
+  url: 'components/sidemenu.html',
+  dataType: 'html',
+  success: function (data) {
+    let sideMenu = document.getElementById('sideMenu');
+    sideMenu.innerHTML = data;
+  },
+  error: function () {
+    alert('Include error sidemenu.');
+  }
+});
+
+/**
+ * メガメニューをループ処理でDOM追加
+ */
+let megaMenuRow = document.querySelector('.megaMenu .row');
+console.log(megaMenu);
+for(let i in megaMenu){
+  /**
+   * DOM生成
+   */
+  let col = document.createElement('div');
+  col.classList.add('col');
+  let colChild = document.createElement('div');
+  colChild.classList.add('card', 'h-100', 'menu');
+  let colGrandChild = document.createElement('div');
+  colGrandChild.classList.add('card-body');
+  let menuName = document.createElement('a');
+  menuName.innerHTML = megaMenu[i][0].menuName;
+  menuName.href = megaMenu[i][0].menuLink;
+  let ul = document.createElement('ul');
+  ul.classList.add('child_menu', 'row', 'row-cols-2');
+  megaMenu[i][0].childMenu.forEach(le => {
+    let li = document.createElement('li');
+    li.classList.add('list-group-item', 'col');
+    li.innerHTML = le.name;
+    ul.appendChild(li);
+  });
+
+  /**
+   * DOM追加
+   */
+  megaMenuRow.appendChild(col);
+  col.appendChild(colChild);
+  colChild.appendChild(colGrandChild);
+  colGrandChild.appendChild(menuName);
+  colGrandChild.appendChild(ul);
+}
